@@ -19,6 +19,6 @@ function createWindow(){
     //win.maximize();
 }
 
-//require('electron-reload')(__dirname)
+require('electron-reload')(__dirname)
 
 app.whenReady().then(createWindow);
