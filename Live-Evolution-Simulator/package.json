@@ -1,0 +1,27 @@
+{
+  "name": "live-evolution-simulator",
+  "version": "1.0.0",
+  "description": "Simulador de evolucion",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HellerSoftware/Live-Evolution-Simulator.git"
+  },
+  "keywords": [
+    "IA",
+    "Simulador",
+    "Evolucion"
+  ],
+  "author": "Jorge",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HellerSoftware/Live-Evolution-Simulator/issues"
+  },
+  "homepage": "https://github.com/HellerSoftware/Live-Evolution-Simulator#readme",
+  "devDependencies": {
+    "electron": "^12.0.1"
+  }
+}
