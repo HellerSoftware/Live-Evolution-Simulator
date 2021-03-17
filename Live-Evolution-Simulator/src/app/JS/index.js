@@ -1,29 +1,55 @@
-//modulo fs
-var fs = require("fs");
+
 
 
 
 //     C O N F I G U R A C I O N :
 //
 //
-var nombreProyecto             =             'proyecto1';                                      //Nombre del proyecto, escribe uno nuevo para crearlo o uno existente para continuarlo
+var nombreProyecto             =             'proyecto1'                        ;             //Nombre del proyecto, escribe uno nuevo para crearlo o uno existente para continuarlo
 //
 //
-var numeroEspecies             =              4;                                              //determina con cuantas especies se desarroyara la simulacion, el valor debe estar entre 2-5 aunque recomendamos dejarlo en 4
-var numeroEjemplaresPorEspecie =              4;                                              //cuantos ejemplares de cada especie hay en la simulacion, valor entre 3-5, aunque recomendamos dejarlo en 4
-var nombreEspecie1             =              'patata1'
-var nombreEspecie2             =              'patata2'
-var nombreEspecie3             =              'patata3'
-var nombreEspecie4             =              'patata4'
-var nombreEspecie5             =              'patata5'
+var numeroEspecies             =              4                                 ;             //determina con cuantas especies se desarroyara la simulacion, el valor debe estar entre 2-5 aunque recomendamos dejarlo en 4
+var numeroEjemplaresPorEspecie =              4                                 ;             //cuantos ejemplares de cada especie hay en la simulacion, valor entre 3-5, aunque recomendamos dejarlo en 4
+var nombreEspecie1             =              'patata1'                         ;
+var nombreEspecie2             =              'patata2'                         ;
+var nombreEspecie3             =              'patata3'                         ;
+var nombreEspecie4             =              'patata4'                         ;
+var nombreEspecie5             =              'patata5'                         ;
 //
 //
-var extensionArchivo           =             '.les';                                           //esta es la extension que tendran los archivos que guardan toda la informacion, no se recomienda cambiarla.
-var directorioProyectos        =             'C:/LES/proyectos/';                              //directorio donde se encuetran todos los proyectos, puedes cambiarlo pero siempre debe seguir la estructura c:/.../LES/proyectos/
-var tiempoMaximoParaMutacion   =              15   /*segundos*/                                //tiempo maximo entre cada mutacion en caso de que no se produzca naturalmente, valor entre 3-25 no se recomienda bajarlo de 8 ni subirlo de 16
+var extensionArchivo           =             '.les'                             ;              //esta es la extension que tendran los archivos que guardan toda la informacion, no se recomienda cambiarla.
+var directorioProyectos        =             'C:/LES/proyectos/'                ;              //directorio donde se encuetran todos los proyectos, puedes cambiarlo pero siempre debe seguir la estructura c:/.../LES/proyectos/
+var tiempoMaximoParaMutacion   =              15   /*segundos*/                 ;               //tiempo maximo entre cada mutacion en caso de que no se produzca naturalmente, valor entre 3-25 no se recomienda bajarlo de 8 ni subirlo de 16
 //
 //
 //
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//modulo fs
+var fs = require("fs");
+
+
+
+
+
+
+
 
 //variable del combre del proyecto en mayusculas
 var nombreProyectoMayusculas = nombreProyecto.toUpperCase();
@@ -108,3 +134,4 @@ var e5 = new serVivo(nombreEspecie5);
 
 verConfiguracion();
 directorioProyectosVerificador();
+verInformacion('HOLA MUNDO');
