@@ -1,7 +1,4 @@
 
-
-
-
 //     C O N F I G U R A C I O N :
 //
 //
@@ -96,15 +93,18 @@ function directorioProyectosVerificador(){
 }
 
 
-/*function directorioProyectoActualVerificador(){
-    if (fs.existsSync(directorioProyectos + nombreProyecto)){
+function directorioProyectoActualVerificador(){
+    var directorioProyectoActual = directorioProyectos + '/' + nombreProyecto;
+    if(fs.existsSync(directorioProyectoActual)){
         console.log('El proyecto actual ya existe');
+        alert('Este proyecto ya existe.\nCambie el nombre del proyecto para crear uno nuevo');
+        close();
     }
     else{
-        folderCreator(directorioProyectos + nombreProyecto);
+        //crearCarpeta(directorioProyectoActual);
     }
 }
-*/
+
 
 
 
@@ -134,4 +134,5 @@ var e5 = new serVivo(nombreEspecie5);
 
 verConfiguracion();
 directorioProyectosVerificador();
+directorioProyectoActualVerificador();
 verInformacion('HOLA MUNDO');
